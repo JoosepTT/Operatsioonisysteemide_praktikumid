@@ -27,15 +27,16 @@ Setuid õiguste kasutamine võib vähendada süsteemi turvalisust, kui seda ei k
 Sticky bit õigustega kasutast saavad faile kustutada ainult kasutajad peeter, kes on sealsed failid loonud, ja opetaja, kes on loonud kausta "yhiskaust" ehk tal on selle omanikuõigused. Teised kasutajad saavad kustutada ainult enda loodud faile, kuid mitte peetri omi.
 
 ### 5-8
-\opetaja@tilgar24:~/klass$ getfacl hinded.txt
-\# file: hinded.txt
-\# owner: opetaja
-\# group: opetaja
-\user::rw-
-\group::---
-\group:direktor:rw-
-\mask::rw-
-\other::---
+```opetaja@tilgar24:~/klass$ getfacl hinded.txt
+# file: hinded.txt
+# owner: opetaja
+# group: opetaja
+user::rw-
+group::---
+group:direktor:rw-
+mask::rw-
+other::---
+```
 
 ### 5-9
 Chattr +i -parameetritega faili sisu ei saa keegi muuta, isegi mitte omanik ega root. +i atribuudiga faili saab kustutada eemaldades sellelt atribuudi käsuga chattr -i testfail-2 ja seejärel kustutades käsuga rm testfail-2.
