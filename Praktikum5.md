@@ -11,3 +11,29 @@ chmod a=x skriptifail ei ole piisav õigus shelli skriptfaili käivitamiseks, se
 Igal Unixi süsteemi kasutajal on oma kaust, et luua failide haldamise ja juurdepääsu kontrollimise süsteem, mis oleks võimalikult efektiivne ja turvaline.
 
 ### 5-4
+Tavakasuatajal on faili uusfail.txt sisu lugemiseks vaja read õigust.
+![pilt1]()
+
+### 5-5
+![pilt2]()
+Setuid (Set User ID) õigust on Unix süsteemides vaja selleks, et fail käivituks omaniku  õigustes, mitte selle kasutaja õigustes, kes faili käivitab. 
+
+### 5-6
+Setuid õiguste kasutamine võib vähendada süsteemi turvalisust, kui seda ei kasutata ettevaatlikult. Näiteks kui setuid õigused on antud valedele või halvasti kirjutatud programmidele, võivad need võimaldada pahatahtlikul kasutajal omandada kõrgendatud õigusi ja nt käivitada pahavara. Samuti võib see anda kasutajatele ligipääsu tundlikele failidele ning setuid programmide haldamine ja jälgimine muutub keerulisemaks.
+
+### 5-7
+Sticky bit õigustega kasutast saavad faile kustutada ainult kasutajad peeter, kes on sealsed failid loonud, ja opetaja, kes on loonud kausta "yhiskaust" ehk tal on selle omanikuõigused. Teised kasutajad saavad kustutada ainult enda loodud faile, kuid mitte peetri omi.
+
+### 5-8
+opetaja@tilgar24:~/klass$ getfacl hinded.txt
+# file: hinded.txt
+# owner: opetaja
+# group: opetaja
+user::rw-
+group::---
+group:direktor:rw-
+mask::rw-
+other::---
+
+### 5-9
+Chattr +i -parameetritega faili sisu ei saa keegi muuta, isegi mitte omanik ega root. +i atribuudiga faili saab kustutada eemaldades sellelt atribuudi käsuga chattr -i testfail-2 ja seejärel kustutades käsuga rm testfail-2.
