@@ -9,7 +9,8 @@ Käesolevas praktikumis tutvusin Virtualboxi Ubuntu virtuaalmasinas Linuxi süst
 ![pilt2](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-10-27%20012304.png?raw=true)
 
 ### 3.
-```ps -axu | grep daemon | tr -s ' ' | cut -d ' ' -f 11-
+```
+ps -axu | grep daemon | tr -s ' ' | cut -d ' ' -f 11-
 ```
 
 ### 4.
