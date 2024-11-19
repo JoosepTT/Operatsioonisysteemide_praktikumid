@@ -17,20 +17,20 @@ Käesolevas praktikumis tutvusin Windows 11 ja Ubuntu operatsioonisüsteemi ress
 | 11.  | Milline on kõige suurem arvutis olev fail ja kõige rohkem andmemahtu hõivav kaust (arvesse võta ka alamkaustade mahtu, ja jätta juurkaust / või C: välja)?  | /home/joosep  | Windows  | ```sudo du -sh /home/* --exclude=/root``` | sort -rh | head -n 10  | TreeSize -> (:C) (>Suurus)  |
 
 #### 12. 
-Käsu ```sha1sum /dev/zero | sha1sum /dev/zero ``` puhul kulub protsessoril enim aega alamtegevusele _.
+Käsu ```sha1sum /dev/zero | sha1sum /dev/zero ``` puhul kulub protsessoril enim aega alamtegevusele "us".
 [pilt1]()!
 
-Käsu ```sha1sum /dev/urandom | sha1sum /dev/urandom``` puhul läheb aga enim aega alamteegvusele _.
+Käsu ```sha1sum /dev/urandom | sha1sum /dev/urandom``` puhul läheb aga enim aega alamteegvusele "sy".
 [pilt2]()!
 
 #### 13. 
-Milline protsess kõige rohkem salvestusseadmele kirjutab?
-Millisesse faili eelmise küsimuse protsess kõige rohkem kirjutab?
-Milline protsess kõige rohkem salvestusseadmelt loeb?
-Millisest failist eelmise küsimuse protsess kõige rohkem loeb?
+Kõige enam kirjutab salvestusseadmele protsess System.
+Protsess "System" kirjutab kõige enam faili "MicrosoftWindows.Client.WebExperience_cw5n1h2byewy\LocaIState\EBWebView\Default\Cache\Cache_Data\f_00005f".
+Milline protsess kõige rohkem salvestusseadmelt loeb? Salvestusseadmelt loeb kõige rohkem samamoodi protsess SYSTEM.
+Millisest failist eelmise küsimuse protsess kõige rohkem loeb? Viimane protsess loeb kõige enam failist "Windows\System32lconfig\DRIVERSfa2332f00_cdbf-11e.c-8630.002248483d791.TMContainer00000000000000000001.regtrans-ms".
 
 #### 14.
-Suurima mahuga oli protsessi _ tekitatud võrguliiklus. 
+Suurima mahuga oli protsessi svchost.exe võrguliiklus. 
 
 #### 15.
-Milliseid konkreetseid programme või käsureakäske kasutada arvuti agluse põhjustajate tuvastamiseks?  | Esmalt tasub vaadata Task manager'ist protsesside vahekaarti ning jälgida protsessori ja mälu kasutust, et tuvastada kõige ressursimahukamad protsessid. Teiseks saab uurida Resource Monitorist protsesside kettakasutust ja võrguaktiivsust, et näha, kas süsteemi aeglustavad ketta või võrgu probleemid. Kolmandaks on mõtekas kasutada arvuti jõudluse jälgimise tööriista Performance Monitor, et mõõta täpsmalt protsessori ja ketaste koormust. Süsteemivigu nagu kettarikkeid või teenuste töö ebaõnnestumisi saab otsida tööriistaga Event Viewer. Lõpuks tuleb piisava vaba ruumi tagamiseks kontrollida üle kettaruum ja vajadusel puhastada süsteemist ajutised failid: seda saab teha tööriistaga Disk Cleanup.
+Esmalt tasub vaadata Task manager'ist protsesside vahekaarti ning jälgida protsessori ja mälu kasutust, et tuvastada kõige ressursimahukamad protsessid. Teiseks saab uurida Resource Monitorist protsesside kettakasutust ja võrguaktiivsust, et näha, kas süsteemi aeglustavad ketta või võrgu probleemid. Kolmandaks on mõtekas kasutada arvuti jõudluse jälgimise tööriista Performance Monitor, et mõõta täpsmalt protsessori ja ketaste koormust. Süsteemivigu nagu kettarikkeid või teenuste töö ebaõnnestumisi saab otsida tööriistaga Event Viewer. Lõpuks tuleb piisava vaba ruumi tagamiseks kontrollida üle kettaruum ja vajadusel puhastada süsteemist ajutised failid: seda saab teha tööriistaga Disk Cleanup.
