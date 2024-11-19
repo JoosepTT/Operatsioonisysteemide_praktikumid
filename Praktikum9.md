@@ -18,10 +18,10 @@ Käesolevas praktikumis tutvusin Windows 11 ja Ubuntu operatsioonisüsteemi ress
 
 #### 12. 
 Käsu ```sha1sum /dev/zero | sha1sum /dev/zero ``` puhul kulub protsessoril enim aega alamtegevusele "us".
-[pilt1](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-11-19%20223318.png?raw=true)!
+![pilt1](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-11-19%20223318.png?raw=true)!
 
 Käsu ```sha1sum /dev/urandom | sha1sum /dev/urandom``` puhul läheb aga enim aega alamteegvusele "sy".
-[pilt2](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-11-19%20223246.png?raw=true)!
+![pilt2](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-11-19%20223246.png?raw=true)!
 
 #### 13. 
 1. Kõige enam kirjutab salvestusseadmele protsess System.
@@ -38,7 +38,7 @@ port: 443
 latents: 2 ms
 võrguliikluse kogumaht: 1 B/sec
 
-[pilt3](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-11-20%20003409.png?raw=true)
+![pilt3](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-11-20%20003409.png?raw=true)
 
 #### 15.
 Esmalt tasub vaadata Task manager'ist protsesside vahekaarti ning jälgida protsessori ja mälu kasutust, et tuvastada kõige ressursimahukamad protsessid. Teiseks saab uurida Resource Monitorist protsesside kettakasutust ja võrguaktiivsust, et näha, kas süsteemi aeglustavad ketta või võrgu probleemid. Kolmandaks on mõtekas kasutada arvuti jõudluse jälgimise tööriista Performance Monitor, et mõõta täpsmalt protsessori ja ketaste koormust. Süsteemivigu nagu kettarikkeid või teenuste töö ebaõnnestumisi saab otsida tööriistaga Event Viewer. Lõpuks tuleb piisava vaba ruumi tagamiseks kontrollida üle kettaruum ja vajadusel puhastada süsteemist ajutised failid: seda saab teha tööriistaga Disk Cleanup.
