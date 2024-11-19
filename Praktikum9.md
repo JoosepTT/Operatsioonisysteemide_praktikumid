@@ -18,19 +18,27 @@ Käesolevas praktikumis tutvusin Windows 11 ja Ubuntu operatsioonisüsteemi ress
 
 #### 12. 
 Käsu ```sha1sum /dev/zero | sha1sum /dev/zero ``` puhul kulub protsessoril enim aega alamtegevusele "us".
-[pilt1]()!
+[pilt1](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-11-19%20223318.png?raw=true)!
 
 Käsu ```sha1sum /dev/urandom | sha1sum /dev/urandom``` puhul läheb aga enim aega alamteegvusele "sy".
-[pilt2]()!
+[pilt2](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-11-19%20223246.png?raw=true)!
 
 #### 13. 
-Kõige enam kirjutab salvestusseadmele protsess System.
-Protsess "System" kirjutab kõige enam faili "MicrosoftWindows.Client.WebExperience_cw5n1h2byewy\LocaIState\EBWebView\Default\Cache\Cache_Data\f_00005f".
-Milline protsess kõige rohkem salvestusseadmelt loeb? Salvestusseadmelt loeb kõige rohkem samamoodi protsess SYSTEM.
-Millisest failist eelmise küsimuse protsess kõige rohkem loeb? Viimane protsess loeb kõige enam failist "Windows\System32lconfig\DRIVERSfa2332f00_cdbf-11e.c-8630.002248483d791.TMContainer00000000000000000001.regtrans-ms".
+1. Kõige enam kirjutab salvestusseadmele protsess System.
+2. Protsess "System" kirjutab kõige enam faili "MicrosoftWindows.Client.WebExperience_cw5n1h2byewy\LocaIState\EBWebView\Default\Cache\Cache_Data\f_00005f".
+3. Salvestusseadmelt loeb kõige rohkem samamoodi protsess SYSTEM.
+4. Viimane protsess loeb kõige enam failist "Windows\System32lconfig\DRIVERSfa2332f00_cdbf-11e.c-8630.002248483d791.TMContainer00000000000000000001.regtrans-ms".
 
 #### 14.
-Suurima mahuga oli protsessi svchost.exe võrguliiklus. 
+Suurima mahuga oli protsessi firefox.exe võrguliiklus:
+kohalik IP-aadress: 10.0.2.15
+kohalik port: 49895
+ühenduse teise poole IP-aadress: 34.107.243.93
+port: 443
+latents: 2 ms
+võrguliikluse kogumaht: 1 B/sec
+
+[pilt3](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-11-20%20003409.png?raw=true)
 
 #### 15.
 Esmalt tasub vaadata Task manager'ist protsesside vahekaarti ning jälgida protsessori ja mälu kasutust, et tuvastada kõige ressursimahukamad protsessid. Teiseks saab uurida Resource Monitorist protsesside kettakasutust ja võrguaktiivsust, et näha, kas süsteemi aeglustavad ketta või võrgu probleemid. Kolmandaks on mõtekas kasutada arvuti jõudluse jälgimise tööriista Performance Monitor, et mõõta täpsmalt protsessori ja ketaste koormust. Süsteemivigu nagu kettarikkeid või teenuste töö ebaõnnestumisi saab otsida tööriistaga Event Viewer. Lõpuks tuleb piisava vaba ruumi tagamiseks kontrollida üle kettaruum ja vajadusel puhastada süsteemist ajutised failid: seda saab teha tööriistaga Disk Cleanup.
