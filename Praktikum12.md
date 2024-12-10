@@ -87,8 +87,12 @@ echo "9^5 for-tsükliga: $tulemus"
 ```
 
 ## skriptide väjundid
-![pilt1]()
+![pilt1](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-12-10%20054317.png?raw=true)
 
 
 ## Tehisaru versioon 6. skriptist
-![pilt2]()
+![pilt2](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-12-10%20053345.png?raw=true)
+![pilt3](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-12-10%20053410.png?raw=true)
+![pilt4](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-12-10%20053423.png?raw=true)
+![pilt5](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-12-10%20053448.png?raw=true)
+![pilt6](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-12-10%20053458.png?raw=true)
