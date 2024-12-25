@@ -17,12 +17,7 @@ Käesolevas praktikumis õppisin kasutama Microsoft Azure'i pilvekeskkonda. Kats
 ![pilt6](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-12-23%20213847.png?raw=true)
 
 ## 5.
-![pilt7]()
+![pilt7](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-12-25%20234541.png?raw=true)
 
 ## 6.
-![pilt8]()
-
-Skript parooli leidmiseks:
-```
-_
-```
+![pilt8](https://github.com/JoosepTT/Operatsioonisysteemide_praktikumid/blob/main/Pildid/Screenshot%202024-12-25%20235734.png?raw=true)
